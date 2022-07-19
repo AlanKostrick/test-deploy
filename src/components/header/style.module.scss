@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+
+    @media(max-width: 675px) {
+        flex-direction: column;
+    }
+}
+
+.navList {
+    display: flex;
+
+    & a {
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0 20px;
+        min-width: 75px;
+        padding: 2px;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        background-color: lightblue;
+        transition: .5s;
+    }
+
+    @media(max-width: 675px) {
+        align-items: center;
+        flex-direction: column;
+
+        & a {
+            margin: 10px;
+            width: 100px;
+        }
+    }
+}
