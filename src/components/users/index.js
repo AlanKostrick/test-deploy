@@ -15,7 +15,7 @@ const Users = ({ users }) => {
     const [validationErrors, setValidationErrors] = useState({});
 
     const userForm = useSelector(state => state.user.form);
-    const { name, job } = userForm;
+    const { job } = userForm;
 
     const dispatch = useDispatch();
 
